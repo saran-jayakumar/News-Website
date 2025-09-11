@@ -68,20 +68,21 @@ function displayNews(articles) {
   });
 }
 
-// Add event listeners to nav links
 document.querySelectorAll("nav ul li a").forEach(link => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
+
+    // Remove old active
+    document.querySelectorAll("nav ul li a").forEach(l => l.classList.remove("active"));
+
+    // Set new active
+    e.target.classList.add("active");
+
     const category = e.target.textContent.toLowerCase();
     fetchNews(category);
   });
 });
-document.getElementById("search-btn").addEventListener("click", () => {
-  const query = document.getElementById("search-input").value.trim();
-  if (query) {
-    searchNews(query);
-  }
-});
+
 
 // Press Enter to search
 document.getElementById("search-input").addEventListener("keypress", (e) => {
@@ -89,7 +90,6 @@ document.getElementById("search-input").addEventListener("keypress", (e) => {
     document.getElementById("search-btn").click();
   }
 });
-
 
 // Load default news (home) on page load
 fetchNews("home");
