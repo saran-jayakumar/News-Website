@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily News</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daily News 24/7</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Breaking News Ticker -->
+  <div class="ticker">
+    <p id="breaking-news">Loading breaking news...</p>
+  </div>
+
   <header>
-    <h1>DAILY NEWS 24/7</h1>
+    <div class="brand">
+      <h1>DAILY NEWS <span>24/7</span></h1>
+    </div>
+
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-              <li class="dropdown">
-        <a href="#" class="dropbtn">World ⌄</a>
-        <ul class="dropdown-content">
-          <li><a href="#" data-country="us">United States</a></li>
-          <li><a href="#" data-country="in">India</a></li>
-          <li><a href="#" data-country="gb">United Kingdom</a></li>
-          <li><a href="#" data-country="au">Australia</a></li>
-          <li><a href="#" data-country="ca">Canada</a></li>
-          <li><a href="#" data-country="jp">Japan</a></li>
-          <li><a href="#" data-country="de">Germany</a></li>
-        </ul>
-        </li>   
-        <li><a href="#">World</a></li>
-        <li><a href="#">Technology</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Entertainment</a></li>
+        <li><a href="#" data-category="general">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">World</a>
+          <ul class="dropdown-content">
+            <li><a href="#" data-country="us">United States</a></li>
+            <li><a href="#" data-country="in">India</a></li>
+            <li><a href="#" data-country="gb">United Kingdom</a></li>
+            <li><a href="#" data-country="au">Australia</a></li>
+            <li><a href="#" data-country="ca">Canada</a></li>
+            <li><a href="#" data-country="jp">Japan</a></li>
+          </ul>
+        </li>
+        <li><a href="#" data-category="technology">Technology</a></li>
+        <li><a href="#" data-category="sports">Sports</a></li>
+        <li><a href="#" data-category="entertainment">Entertainment</a></li>
+        <li><a href="#" data-category="business">Business</a></li>
+        <li><a href="#" data-category="health">Health</a></li>
       </ul>
     </nav>
-      <div class="search-bar">
-    <input type="text" id="search-input" placeholder="Search news...">
-    <button id="search-btn">Search</button>
-  </div>
+
+    <div class="search-area">
+      <input id="search-input" type="text" placeholder="Search news (press Enter)..." />
+      <button id="search-btn">Search</button>
+      <button id="darkToggle" class="dark-toggle" title="Toggle dark mode">☾</button>
+    </div>
   </header>
 
+  <!-- Trending News Bar -->
+<div class="trending-bar">
+  <span class="trending-title">🔥 Trending:</span>
+  <marquee behavior="scroll" direction="left" scrollamount="6" class="trending-text">
+    Breaking News: Market hits all-time high — 
+    Sports: India wins thrilling cricket match — 
+    Technology: New AI model breaks records —
+    Entertainment: Big movie release this weekend —
+    World: Climate summit starts tomorrow
+  </marquee>
+</div>
+
+
   <main>
-    <section id="news-container">
-      <!-- News articles will be injected here -->
+    <section id="news-container" class="news-grid">
+      <!-- News cards injected here -->
     </section>
+
+    <aside class="sidebar">
+      <h2>Top Trending</h2>
+      <ul id="trending-list"></ul>
+    </aside>
   </main>
 
   <footer>
