@@ -1,4 +1,3 @@
-// Put your API key here (you gave this earlier)
 const API_KEY = "b831426aeb74456b8fdb31f052e6d3b1";
 
 // Base URL
@@ -23,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     newsContainer.innerHTML = `<div class="error">${msg}</div>`;
   }
 
-  // Build URL helper
+  // US Based News 
   function buildTopHeadlinesUrl({country = "us", category = "", pageSize = 20} = {}) {
     let u = `${TOP_HEADLINES}?apiKey=${API_KEY}&pageSize=${pageSize}`;
     if (country) u += `&country=${country}`;
@@ -110,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // breaking + trending
+  // breaking + trending news
   async function loadBreakingAndTrending(country="us") {
     try {
       const url = buildTopHeadlinesUrl({country, pageSize: 12});
