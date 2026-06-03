@@ -46,13 +46,13 @@ News-Website/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/news-website.git
+git clone https://github.com/your-username/News-Website.git
 ```
 
 ### 2. Open Project
 
 ```bash
-cd news-website
+cd News-Website
 ```
 
 ### 3. Configure API Key
@@ -81,12 +81,10 @@ Website: https://newsapi.org
 
 ## 💡 Future Enhancements
 
-- Dark Mode
 - Bookmark Articles
 - Infinite Scroll
 - Multi-language Support
 - User Authentication
-- Trending Section
 
 ---
 
@@ -102,15 +100,9 @@ Contributions are welcome.
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
 ## 👨‍💻 Author
 
 **Saran Jayakumar**  
 Full-Stack Developer
 
-GitHub: https://github.com/your-github-username
+GitHub: [https://github.com/your-github-username](https://github.com/saran-jayakumar)
