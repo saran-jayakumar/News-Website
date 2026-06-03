@@ -28,6 +28,7 @@ A modern and responsive News Website built using **HTML, CSS, and JavaScript** t
 
 ![Image Alt](https://github.com/saran-jayakumar/News-Website/blob/main/Screenshots/Dark_Mode.png?raw=true)
 
+![Image Alt](https://github.com/saran-jayakumar/News-Website/blob/main/Screenshots/By_Search.png?raw=true)
 
 ## 📂 Folder Structure
 
