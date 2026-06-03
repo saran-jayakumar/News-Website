@@ -1,4 +1,4 @@
-# 📰 News Website
+<img width="2940" height="1766" alt="image" src="https://github.com/user-attachments/assets/e68e3291-496d-4d92-a429-c1744142eb8d" /># 📰 News Website
 
 A modern and responsive News Website built using **HTML, CSS, and JavaScript** that fetches real-time news using **News API**. Users can browse the latest headlines, search for topics, and stay updated with current events through a simple and clean interface.
 
@@ -26,7 +26,7 @@ A modern and responsive News Website built using **HTML, CSS, and JavaScript** t
 
 ## 📸 Screenshots
 
-![Uploading image.png…]()
+![Image Alt]()
 
 
 ## 📂 Folder Structure
