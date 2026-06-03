@@ -26,7 +26,8 @@ A modern and responsive News Website built using **HTML, CSS, and JavaScript** t
 
 ## 📸 Screenshots
 
-Screenshots/By_Search.png
+![Uploading image.png…]()
+
 
 ## 📂 Folder Structure
 
