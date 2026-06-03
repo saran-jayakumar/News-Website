@@ -46,7 +46,7 @@ News-Website/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/News-Website.git
+git clone https://github.com/saran-jayakumar/News-Website.git
 ```
 
 ### 2. Open Project
